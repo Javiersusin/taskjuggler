@@ -372,7 +372,7 @@ taskreport development "" {
 taskreport initial_plan "Initial Plan" {
   formats html
   headline "Planificación Inicial"
-  columns bsi, name, start, end, effort, allocated
+  columns bsi, name, start, end, effort
   loadunit h
   timeformat "%Y-%m-%d"
 }
