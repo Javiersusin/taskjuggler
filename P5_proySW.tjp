@@ -373,7 +373,7 @@ taskreport initial_plan "Initial Plan" {
   formats html
   headline "Planificación Inicial"
   columns bsi, name, start, end, effort
-  loadunit h
+  loadunit hours
   timeformat "%Y-%m-%d"
 }
 
