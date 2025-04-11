@@ -70,7 +70,7 @@ resource dev3 "Peter Green" {
 }
 
 resource javier "Javier Susín Villacampa" {
-  workinghours 08:00 - 12:00
+  workinghours mon - fri 08:00 - 12:00
   email "872847@unizar.es"
 }
 
@@ -183,14 +183,6 @@ task tmobF "Mobile Front End" {
     effort 5d
     allocate javier
     depends WMGame.tback.tbackDev
-  }
-
-  task ttest "Acceptance tests" {
-    effort 10d
-    allocate boss, dev2
-    actual:effort 20d
-    depends WMGame.twebF, WMGame.tback, WMGame.tmobF, WMGame.tcloud
-    start 2025-04-01
   }
 
   task ttest "Acceptance tests" {
